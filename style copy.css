@@ -43,9 +43,7 @@ body {
 }
 
 .resume .resume_left {
-  /* width: 280px; */
   width: 280px;
-  height: 900px;
   background: #0bb5f4;
 }
 
@@ -57,7 +55,6 @@ body {
 .resume .resume_left .resume_profile img {
   width: 100%;
   height: 100%;
-
 }
 
 .resume .resume_left .resume_content {
@@ -66,7 +63,6 @@ body {
 
 .resume .title {
   margin-bottom: 20px;
- 
 }
 
 .resume .resume_left .bold {
@@ -80,11 +76,9 @@ body {
 .resume .resume_item {
   padding: 25px 0;
   border-bottom: 2px solid #b1eaff;
-  text-align: justify;
 }
 
 .resume .resume_left .resume_item:last-child,
-.resume .resume_bottom .resume_item:last-child
 .resume .resume_right .resume_item:last-child {
   border-bottom: 0px;
 }
@@ -111,7 +105,6 @@ body {
 }
 
 .resume .icon i,
-.resume .resume_bottom .resume_hobby ul li i 
 .resume .resume_right .resume_hobby ul li i {
   position: absolute;
   top: 50%;
@@ -170,9 +163,28 @@ body {
   color: #0bb5f4;
 }
 
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
 
 .resume .resume_right ul li {
   position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
 }
 .resume .resume_right ul li .keyskills {
   font-size: 12px;
@@ -185,70 +197,20 @@ body {
   margin-bottom: 0;
   
 }
-
-.resume .resume_bottom {
-  position: absolute;
-  top: 950px;
-  width: 800px;
-  background: #fff;
-  padding: 25px;
-}
-
-.resume .resume_bottom .bold {
-  color: #0bb5f4;
-}
-
-.resume .resume_bottom .resume_work ul,
-.resume .resume_bottom .resume_education ul {
-  padding-left: 40px;
-  overflow: hidden;
-}
-
-.resume .resume_bottom ul li {
-  position: relative;
-}
-
-.resume .resume_bottom ul li .date {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.resume .resume_bottom ul li .info {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-.resume .resume_bottom ul li:last-child .info {
-  margin-bottom: 0;
-}
-.resume .resume_bottom ul li .keyskills {
-  font-size: 12px;
-  margin-bottom: 10px;
-
-}
-
-.resume .resume_bottom ul li:last-child .keyskills {
-  font-size: 12px;
-  margin-bottom: 0;
-  
-}
-.resume .resume_bottom .highlights {
+.resume .resume_right .highlights {
   font-size: 14px;
   margin-bottom: 10px;
-  text-align: justify;
 
 }
-.resume .resume_bottom .highlights .highlightsstart {
+.resume .resume_right .highlights .highlightsstart {
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 500;
-  text-align: justify;
 
 }
 
-.resume .resume_bottom .resume_work ul li:before,
-.resume .resume_bottom .resume_education ul li:before {
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -259,8 +221,8 @@ body {
   border: 2px solid #0bb5f4;
 }
 
-.resume .resume_bottom .resume_work ul li:after,
-.resume .resume_bottom .resume_education ul li:after {
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
   content: "";
   position: absolute;
   top: 14px;
@@ -271,39 +233,25 @@ body {
   background: #0bb5f4;
 }
 
-.resume .resume_bottom .resume_hobby ul {
+.resume .resume_right .resume_hobby ul {
   display: flex;
   justify-content: space-between;
-  padding: 0; /* Remove default padding */
 }
 
-.resume .resume_bottom .resume_hobby ul li {
+.resume .resume_right .resume_hobby ul li {
   width: 80px;
   height: 80px;
   border: 2px solid #0bb5f4;
   border-radius: 50%;
   position: relative;
   color: #0bb5f4;
-  display: flex; /* Align icon and line */
-  justify-content: center; /* Center icon horizontally */
-  align-items: center; /* Center icon vertically */
 }
 
-.resume .resume_bottom .resume_hobby ul li i {
+.resume .resume_right .resume_hobby ul li i {
   font-size: 30px;
 }
 
-.resume .resume_bottom .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 50%; /* Align line in the middle */
-  left: calc(100% + 2px); /* Position the line to the right of the circle */
-  transform: translateY(-50%); /* Adjust line position vertically */
-  /*width: 145px; /* Adjust line length */
-  /* height: 2px; */
-  background: #0bb5f4;
-}
-/* .resume .resume_bottom .resume_hobby ul li:before {
+.resume .resume_right .resume_hobby ul li:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -311,9 +259,8 @@ body {
   width: 50px;
   height: 2px;
   background: #0bb5f4;
-} */
-
-.resume .resume_bottom .resume_hobby ul li:last-child:before {
-  display: none;
 }
 
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
