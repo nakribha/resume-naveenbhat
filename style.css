@@ -20,7 +20,11 @@ body {
   font-size: 20px;
   text-transform: uppercase;
 }
-
+p a {
+  font: inherit; /* Inherit font properties */
+  color: inherit; /* Inherit color */
+  font-weight: inherit; /* Inherit font weight (thickness) */
+}
 .semi-bold {
   font-weight: 500;
   font-size: 16px;
