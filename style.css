@@ -19,7 +19,16 @@ body {
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
+
 }
+
+
+.name, .designation, .social-header {
+  text-align: center; /* Center-align text */
+}
+
+
+
 p a {
   font: inherit; /* Inherit font properties */
   color: inherit; /* Inherit color */
@@ -61,7 +70,8 @@ p a {
 .resume .resume_left .resume_profile img {
   width: 100%;
   height: 100%;
-
+  display: block; /* Ensures that margin: auto; works properly */
+  margin: auto; /* Center-align the image */
 }
 
 .resume .resume_left .resume_content {
@@ -79,6 +89,7 @@ p a {
 
 .resume .resume_left .regular {
   color: #b1eaff;
+  
 }
 
 .resume .resume_item {
@@ -226,6 +237,7 @@ p a {
 .resume .resume_bottom ul li:last-child .info {
   margin-bottom: 0;
 }
+
 .resume .resume_bottom ul li .keyskills {
   font-size: 12px;
   margin-bottom: 10px;
